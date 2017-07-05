@@ -46,10 +46,6 @@
         <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
     </bean>
 
-    <bean id="bookService" class="net.proselyte.bookmanager.service.BookServiceImpl">
-        <property name="bookDao" ref="bookDao"/>
-    </bean>
-
     <context:component-scan base-package="net.proselyte.bookmanager"/>
 
     <tx:annotation-driven transaction-manager="transactionManager"/>
